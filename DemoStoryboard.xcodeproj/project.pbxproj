@@ -21,6 +21,10 @@
 		1540ADBE1841E243007F40D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1540ADA01841E243007F40D4 /* UIKit.framework */; };
 		1540ADC61841E243007F40D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1540ADC41841E243007F40D4 /* InfoPlist.strings */; };
 		1540ADC81841E243007F40D4 /* DemoStoryboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1540ADC71841E243007F40D4 /* DemoStoryboardTests.m */; };
+		1540ADD61841E45B007F40D4 /* XIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1540ADD41841E45B007F40D4 /* XIBViewController.m */; };
+		1540ADD71841E45B007F40D4 /* XIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1540ADD51841E45B007F40D4 /* XIBViewController.xib */; };
+		1540ADDA1841E95F007F40D4 /* StoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1540ADD91841E95F007F40D4 /* StoryboardViewController.m */; };
+		1540ADDD1841EF72007F40D4 /* SegueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1540ADDC1841EF72007F40D4 /* SegueViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		1540ADC31841E243007F40D4 /* DemoStoryboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoStoryboardTests-Info.plist"; sourceTree = "<group>"; };
 		1540ADC51841E243007F40D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1540ADC71841E243007F40D4 /* DemoStoryboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoStoryboardTests.m; sourceTree = "<group>"; };
+		1540ADD31841E45B007F40D4 /* XIBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIBViewController.h; sourceTree = "<group>"; };
+		1540ADD41841E45B007F40D4 /* XIBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XIBViewController.m; sourceTree = "<group>"; };
+		1540ADD51841E45B007F40D4 /* XIBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBViewController.xib; sourceTree = "<group>"; };
+		1540ADD81841E95F007F40D4 /* StoryboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardViewController.h; sourceTree = "<group>"; };
+		1540ADD91841E95F007F40D4 /* StoryboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardViewController.m; sourceTree = "<group>"; };
+		1540ADDB1841EF72007F40D4 /* SegueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegueViewController.h; sourceTree = "<group>"; };
+		1540ADDC1841EF72007F40D4 /* SegueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegueViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +123,8 @@
 		1540ADA21841E243007F40D4 /* DemoStoryboard */ = {
 			isa = PBXGroup;
 			children = (
-				1540ADAB1841E243007F40D4 /* DSAppDelegate.h */,
-				1540ADAC1841E243007F40D4 /* DSAppDelegate.m */,
-				1540ADAE1841E243007F40D4 /* Main.storyboard */,
-				1540ADB11841E243007F40D4 /* DSViewController.h */,
-				1540ADB21841E243007F40D4 /* DSViewController.m */,
+				1540ADD21841E296007F40D4 /* Controllers */,
+				1540ADD11841E252007F40D4 /* Views */,
 				1540ADB41841E243007F40D4 /* Images.xcassets */,
 				1540ADA31841E243007F40D4 /* Supporting Files */,
 			);
@@ -126,6 +134,8 @@
 		1540ADA31841E243007F40D4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1540ADAB1841E243007F40D4 /* DSAppDelegate.h */,
+				1540ADAC1841E243007F40D4 /* DSAppDelegate.m */,
 				1540ADA41841E243007F40D4 /* DemoStoryboard-Info.plist */,
 				1540ADA51841E243007F40D4 /* InfoPlist.strings */,
 				1540ADA81841E243007F40D4 /* main.m */,
@@ -150,6 +160,30 @@
 				1540ADC41841E243007F40D4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1540ADD11841E252007F40D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1540ADD51841E45B007F40D4 /* XIBViewController.xib */,
+				1540ADAE1841E243007F40D4 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1540ADD21841E296007F40D4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1540ADB11841E243007F40D4 /* DSViewController.h */,
+				1540ADB21841E243007F40D4 /* DSViewController.m */,
+				1540ADD31841E45B007F40D4 /* XIBViewController.h */,
+				1540ADD41841E45B007F40D4 /* XIBViewController.m */,
+				1540ADD81841E95F007F40D4 /* StoryboardViewController.h */,
+				1540ADD91841E95F007F40D4 /* StoryboardViewController.m */,
+				1540ADDB1841EF72007F40D4 /* SegueViewController.h */,
+				1540ADDC1841EF72007F40D4 /* SegueViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1540ADD71841E45B007F40D4 /* XIBViewController.xib in Resources */,
 				1540ADB51841E243007F40D4 /* Images.xcassets in Resources */,
 				1540ADA71841E243007F40D4 /* InfoPlist.strings in Resources */,
 				1540ADB01841E243007F40D4 /* Main.storyboard in Resources */,
@@ -250,7 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1540ADD61841E45B007F40D4 /* XIBViewController.m in Sources */,
 				1540ADA91841E243007F40D4 /* main.m in Sources */,
+				1540ADDD1841EF72007F40D4 /* SegueViewController.m in Sources */,
+				1540ADDA1841E95F007F40D4 /* StoryboardViewController.m in Sources */,
 				1540ADB31841E243007F40D4 /* DSViewController.m in Sources */,
 				1540ADAD1841E243007F40D4 /* DSAppDelegate.m in Sources */,
 			);
